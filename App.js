@@ -16,12 +16,9 @@ export default class App extends React.Component {
   
 
 
-  anotherFunc = () => {
-    var obj = this.nextDay.reduce((c, v) => Object.assign(c, {[v]: {selected: true,marked: true}}), {});
-    this.setState({ marked : obj});
-}
+  a
 setDate=(date)=>{
-  debugger
+  
   console.log(date,"gggg")
 }
 
@@ -105,7 +102,7 @@ setDate=(date)=>{
           // ... You can check the source to find the other keys.
         }}
         // onDateChange={(date) => {this.setState({startDate: date})}}
-        onDateChange={(date)=>{this.setDate}}
+        onDateChange={(date) => {this.setState({startDate: date})}}
       />
       <DatePicker
          style={{width: 400,backgroundColor:'#fff',margin:"2%"}}
